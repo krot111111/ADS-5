@@ -9,7 +9,7 @@ template <typename T, int kSize> class TStack {
   T arr[kSize];
   int top_index;
 
-public:
+ public:
   TStack() : top_index(-1) {}
 
   bool isEmpty() const { return top_index == -1; }
