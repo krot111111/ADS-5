@@ -4,9 +4,9 @@
 
 #include <stdexcept>
 
-template <typename T, int size> class TStack {
-private:
-  T arr[size];
+template <typename T, int kSize> class TStack {
+ private:
+  T arr[kSize];
   int top_index;
 
 public:
@@ -14,7 +14,7 @@ public:
 
   bool isEmpty() const { return top_index == -1; }
 
-  bool isFull() const { return top_index == size - 1; }
+  bool isFull() const { return top_index == kSize - 1; }
 
   void push(const T &item) {
     if (isFull()) {
